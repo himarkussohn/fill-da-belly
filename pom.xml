@@ -27,13 +27,31 @@
 
     <modules>
         <module>belly-web</module>
+        <module>belly-domain</module>
+        <module>belly-service</module>
+        <module>belly-dao</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>feed-me-app</artifactId>
+                <artifactId>feed-me-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>feed-me-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>feed-me-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>feed-me-dao</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>
